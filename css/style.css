@@ -1,4 +1,25 @@
 body{
-    background-color: darkcyan;
-    color: white;
+    background-color: #d9dbd4;
+    color: black;
+}
+
+#user-active{
+    display: flex;
+    align-items: center;
+}
+
+#user-active-img{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#user-active-name{
+    text-transform: capitalize;
+    margin-right: 3rem;
+}
+
+#user-active > i {
+    margin-right: .7rem;
 }
