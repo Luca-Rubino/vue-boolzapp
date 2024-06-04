@@ -10,7 +10,7 @@ createApp({
         contacts: [
             {
                 name: 'Michele',
-                avatar: './img/avatar_1',
+                avatar: './img/avatar_1.jpg',
                 visible: true,
                 messages: [
                     {
@@ -32,7 +32,7 @@ createApp({
             },
             {
                 name: 'Fabio',
-                avatar: './img/avatar_2',
+                avatar: './img/avatar_2.jpg',
                 visible: true,
                 messages: [
                     {
@@ -54,7 +54,7 @@ createApp({
             },
             {
                 name: 'Samuele',
-                avatar: './img/avatar_3',
+                avatar: './img/avatar_3.jpg',
                 visible: true,
                 messages: [
                     {
@@ -76,7 +76,7 @@ createApp({
             },
             {
                 name: 'Alessandro B.',
-                avatar: './img/avatar_4',
+                avatar: './img/avatar_4.jpg',
                 visible: true,
                 messages: [
                     {
@@ -93,7 +93,7 @@ createApp({
             },
             {
                 name: 'Alessandro L.',
-                avatar: './img/avatar_5',
+                avatar: './img/avatar_5.jpg',
                 visible: true,
                 messages: [
                     {
@@ -110,7 +110,7 @@ createApp({
             },
             {
                 name: 'Claudia',
-                avatar: './img/avatar_6',
+                avatar: './img/avatar_6.jpg',
                 visible: true,
                 messages: [
                     {
@@ -132,7 +132,7 @@ createApp({
             },
             {
                 name: 'Federico',
-                avatar: './img/avatar_7',
+                avatar: './img/avatar_7.jpg',
                 visible: true,
                 messages: [
                     {
@@ -149,7 +149,7 @@ createApp({
             },
             {
                 name: 'Davide',
-                avatar: './img/avatar_8',
+                avatar: './img/avatar_8.jpg',
                 visible: true,
                 messages: [
                     {
@@ -171,5 +171,22 @@ createApp({
             }
         ]
     }
-  }
+  },
+methods: {
+    // prevImg: function(){
+    //     if (this.ActiveObject > 0) {
+    //         this.ActiveObject--;
+    //     } else {
+    //         this.ActiveObject = this.slides.length - 1;
+    //     }
+    // },
+
+    // nextImg: function() {
+    //     if (this.ActiveObject < this.slides.length - 1) {
+    //         this.ActiveObject++;
+    //     } else {
+    //         this.ActiveObject = 0;
+    //     }
+    // }
+  },
 }).mount('#app')
