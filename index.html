@@ -16,16 +16,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <aside>
-        <section id="user-active">
-            <img src="img/avatar_io.jpg" alt="User-active" id="user-active-img">
-            <span id="user-active-name">sofia</span>
-            <i class="fa-solid fa-circle-notch"></i>
-            <i class="fa-solid fa-message"></i>
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-        </section>
-        <section></section>
-    </aside>
+    <div id="app">
+        <aside>
+            <section id="user-active">
+                <img src="img/avatar_io.jpg" alt="User-active" id="user-active-img">
+                <span id="user-active-name">sofia</span>
+                <i class="fa-solid fa-circle-notch"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </section>
+            <section></section>
+        </aside>
+        <div>
+            <ul>
+                <li v-for="contacts in contacts">
+                    <img :src="contacts.avatar" :alt="contacts.name" id="user-active-img">
+                    <span id="user-active-name">
+                        <h4>{{contacts.name}}</h4>
+                        <p>Ultimo messaggio inviato</p>
+                    </span>
+                    <span>12:00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- Vue3 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- my script -->
