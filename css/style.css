@@ -1,7 +1,22 @@
 body{
     background-color: #d9dbd4;
     color: black;
+    font-family: "Lato", sans-serif;
+    background-image: linear-gradient(to bottom,
+    #009688 0vh,
+    #009688 15vh,
+    #dddbd1 15vh,
+    #dddbd1 100vh
+    );
 }
+
+body > div:first-child{
+    background: whitesmoke;
+    width: 85%;
+    height: 90vh;
+    margin: 5vh auto;
+}
+
 
 #user-active{
     display: flex;
@@ -22,4 +37,19 @@ body{
 
 #user-active > i {
     margin-right: .7rem;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+
+li > span > p {
+    color: gray;
 }
