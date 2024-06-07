@@ -22,4 +22,8 @@ Traccia
 
 Svolgimento:
 
-- Inserire in pagina tramite direttiva v-for i dati di ogni contatto
+- Inserire in data() l'array oggetti con i contatti con i messaggi
+- Scrivere funzione per selezionare il contatto
+- Scrivere funzione per inserire il messaggio scritto nell'imput fra i messaggi inviati nella chat
+- Scrivere funzione per restituire la risposta al messaggio inviato nella chat
+- inserire nell'html i framework vue per collegare i dati
