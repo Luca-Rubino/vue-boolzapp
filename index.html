@@ -43,8 +43,34 @@
                 
             </article>
 
+            <article class="searchbar">
+                <!-- barra ricerca chat -->
+                <aside class="src-input">
+                    <input type="text" class="input" placeholder="Cerca o inizia una nuova chat"
+                    v-model="ricerca">
+                </aside>
+
+            </article>
+
+            <article class="contacts-list">
+                <!-- lista chat -->
+                <aside class="list-item flex " v-for="(item, index) in contacts" :key="index" @click="setActiveContact(index)" :class="{ active: index === activeContact, hidden: !(item.name.toLowerCase().includes(ricerca.toLowerCase())) }">
+                    <img :src="contacts[index].avatar" :alt="contacts[index].name" class="mkm-contact-picture">
+                    <div class="msg flex-column">
+                        <p class="contact-name">
+                            {{ item.name }}
+                        </p>
+                        <p class="ultimo-messaggio">Ultimo messaggio inviato</p>
+                        <p class="data ultimo-messaggio">12:00</p>
+                    </div>
+                </aside>
+
+            </article>
+
+        </section>
+
     </div>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src="JS/script.js"></script>
+    <!-- <script src="JS/script.js"></script> -->
 </body>
 </html>
