@@ -69,6 +69,48 @@
 
         </section>
 
+        <!-- Struttura dei messaggi -->
+        <section class="messages">
+
+            <article class="conversation-contact flex-between">
+
+                <aside class="contact-info flex flex-centered">
+                    <img src="img/avatar_1.jpg" alt="contact pic" class="mkm-contact-picture">
+                    <p class="contact-name">
+                        {{ contacts[activeContact].name }}
+                    </p>
+                </aside>
+
+                <aside class="action-buttons ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </aside>
+
+            </article>
+
+            <article class="active-conversation flex-column" >
+
+                <article class="single-message "> 
+                    {{ message.message }}
+                </article>
+
+            </article>
+
+            <article class="message-input flex">
+
+                <aside class="box emoj"></aside>
+
+                <aside class="box-input input">
+                    <input type="text" name="user" class="input" placeholder="Scrivi un messaggio">
+                </aside>
+
+                <aside class="box vocal"></aside>
+
+            </article>
+
+        </section>
+
     </div>
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <!-- <script src="JS/script.js"></script> -->
