@@ -167,8 +167,9 @@ createApp({
                 }
             ],
             activeContact : 0,
-            ricerca:'',
-            newMessage: ''
+
+            newMessage: '',
+            search:'',
         }
 },
 methods: {
@@ -198,5 +199,10 @@ methods: {
             this.newMessage= '';
         }, 1000);
     },
-}
+    // funzione per la ricerca contatti
+    searchContact: function (contact) {
+        contactName = (contact.name.toLowerCase().indexOf(this.search.toLowerCase()) > - 1);
+            return contactName
+    },
+},
 }).mount('#app');

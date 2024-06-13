@@ -46,16 +46,15 @@
             <article class="searchbar">
                 <!-- barra ricerca chat -->
                 <aside class="src-input">
-                    <input type="text" class="input" placeholder="Cerca o inizia una nuova chat"
-                    v-model="ricerca">
+                    <input type="text" class="input" placeholder="Cerca o inizia una nuova chat" v-model="search">
                 </aside>
 
             </article>
 
             <article class="contacts-list">
                 <!-- lista chat -->
-                <aside class="list-item flex " v-for="(item, index) in contacts" :key="index" @click="setActiveContact(index)" :class="{ active: index === activeContact, hidden: !(item.name.toLowerCase().includes(ricerca.toLowerCase())) }">
-                    <img :src="contacts[index].avatar" :alt="contacts[index].name" class="mkm-contact-picture">
+                <aside class="list-item flex " v-for="(item, index) in contacts" :key="index" @click="setActiveContact(index)" :class="{ active: index === activeContact, hidden: !(item.name.toLowerCase().includes(search.toLowerCase())) }" v-show="searchContact(ite)">
+                    <img :src="contacts[index].avatar" alt="contacts[index].name" class="mkm-contact-picture">
                     <div class="msg flex-column">
                         <p class="contact-name">
                             {{ item.name }}
@@ -64,7 +63,6 @@
                         <p class="data ultimo-messaggio">12:00</p>
                     </div>
                 </aside>
-
             </article>
 
         </section>
